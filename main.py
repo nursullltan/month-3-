@@ -1,3 +1,6 @@
+
+"""ДОМАШКА ВНИЗУ НЕ СТАЛ ТРОГАТЬ КОД, КОТОРЫЙ БЫЛ НА УРОКЕ"""
+
 import flet as ft 
 
 def app(page: ft.Page):
@@ -33,6 +36,13 @@ def app(page: ft.Page):
     theme_btn = ft.IconButton(icon=ft.Icons.CHANGE_CIRCLE, on_click=change_theme)
 
 
+from datetime import datetime
+
 ft.run(app, view=ft.AppView.FLET_APP)
 
-git rm -r --cached .
+name = input("Введите имя: ")
+
+now = datetime.now()
+time_str = now.strftime("%Y:%m:%d - %H:%M:%S")
+
+print(f"{time_str} - Привет, {name}!")
