@@ -35,3 +35,4 @@ def app(page: ft.Page):
 
 ft.run(app, view=ft.AppView.FLET_APP)
 
+git rm -r --cached .
